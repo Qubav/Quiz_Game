@@ -1,5 +1,5 @@
 # Quiz Game
-Simple Python game./
+Simple Python game.\
 Rules:
 - user sees questions that have to be answered True or False
 - based on corecttness of user answer user gets +1 or +0 to score
