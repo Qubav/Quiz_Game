@@ -2,11 +2,14 @@ from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
 
+# making list of Question objects that store text and answers form questions in question_data
 question_bank = []
 
 for question in question_data:
-    question_bank.append(Question(question["text"], question["answer"]))
+    q = Question(question["text"], question["answer"])
+    question_bank.append(q)
 
+# creating QuizBrain object and using its methods to let user play Quiz Game
 quiz_brain = QuizBrain(question_bank)
 
 while quiz_brain.still_has_questions():
